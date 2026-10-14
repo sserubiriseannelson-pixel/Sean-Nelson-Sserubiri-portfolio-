@@ -1,11 +1,12 @@
 # Sean Nelson Sserubiri — Portfolio
 
-Personal portfolio site. Plain HTML and CSS, no build step, no dependencies.
+Personal portfolio site. Plain HTML, CSS and JavaScript, no build step, no dependencies.
 
 ## Files
 
 - `index.html` — content and structure
-- `style.css` — layout and typography
+- `style.css` — layout, typography and animation styles
+- `script.js` — kinetic headline, scroll effects, marquee and the hero line-field graphic
 
 ## Updating it
 

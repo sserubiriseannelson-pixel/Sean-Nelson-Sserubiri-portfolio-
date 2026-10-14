@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sean Nelson Sserubiri — Student developer</title>
-  <meta name="description" content="Sean Nelson Sserubiri is a student at Makerere College School learning web development with HTML, CSS and JavaScript.">
-  <meta name="theme-color" content="#f6f3ee">
+  <meta name="description" content="Sean Nelson Sserubiri is a student at Uganda Christian University learning web development with HTML, CSS and JavaScript.">
+  <meta name="theme-color" content="#0f1f18">
   <meta property="og:title" content="Sean Nelson Sserubiri">
-  <meta property="og:description" content="Student at Makerere College School, learning web development.">
+  <meta property="og:description" content="Student at Uganda Christian University, learning web development.">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3a2e'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' text-anchor='middle' fill='%23f6f3ee'%3ES%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,20 +30,30 @@
   </header>
 
   <main id="main">
-    <section class="hero wrap" id="top">
-      <p class="kicker">Student · Makerere College School</p>
-      <h1>I'm learning to build things for the web.</h1>
-      <p class="lede">I'm Sean. I'm early in my technology journey, working through the fundamentals of HTML, CSS and JavaScript, and looking for people and opportunities to learn from.</p>
-      <p class="links">
-        <a class="btn" href="#work">See my work</a>
-        <a class="plain" href="https://github.com/sserubiriseannelson-pixel" target="_blank" rel="noopener">GitHub profile&nbsp;↗</a>
-      </p>
+    <section class="hero" id="top">
+      <canvas id="field" aria-hidden="true"></canvas>
+      <div class="wrap hero-inner" id="hero-inner">
+        <p class="kicker fade">Student · Uganda Christian University</p>
+        <h1 data-split>I'm learning to build things for the web.</h1>
+        <p class="lede fade">I'm Sean. I'm early in my technology journey, working through the fundamentals of HTML, CSS and JavaScript, and looking for people and opportunities to learn from.</p>
+        <p class="links fade">
+          <a class="btn" href="#work">See my work</a>
+          <a class="plain" href="https://github.com/sserubiriseannelson-pixel" target="_blank" rel="noopener">GitHub profile&nbsp;↗</a>
+        </p>
+      </div>
     </section>
+
+    <div class="marquee" aria-label="Tools I use: HTML, CSS, JavaScript, Git, GitHub">
+      <div class="marquee-track" id="marquee-track">
+        <div class="marquee-group"><span>HTML</span><span class="o">CSS</span><span>JavaScript</span><span class="o">Git</span><span>GitHub</span></div>
+        <div class="marquee-group" aria-hidden="true"><span>HTML</span><span class="o">CSS</span><span>JavaScript</span><span class="o">Git</span><span>GitHub</span></div>
+      </div>
+    </div>
 
     <section class="wrap block" id="about">
       <h2 class="label">About</h2>
       <div class="prose">
-        <p>I'm a student at Makerere College School. I got interested in technology because I like seeing an idea turn into something that works on a screen.</p>
+        <p class="big" data-scrub>I'm a student at Uganda Christian University. I got interested in technology because I like seeing an idea turn into something that works on a screen.</p>
         <p>I haven't settled on one area yet, so for now I'm learning the basics properly and practising by building small things. I'm hoping to find a mentor, an internship, or a first role where I can contribute to a team and keep learning.</p>
       </div>
     </section>
@@ -56,7 +66,7 @@
           <div>
             <h3><a href="https://github.com/sserubiriseannelson-pixel/Sean-Nelson-Sserubiri-portfolio-" target="_blank" rel="noopener">This portfolio</a></h3>
             <p>A personal site built with HTML, CSS and JavaScript and published with GitHub Pages. Source code is public.</p>
-            <p class="meta">HTML · CSS · GitHub Pages</p>
+            <p class="meta">HTML · CSS · JavaScript · GitHub Pages</p>
           </div>
         </article>
         <p class="aside">Next on my list: a small task tracker in JavaScript and a learning log kept in Markdown. I'll add them here once they're finished.</p>
@@ -83,5 +93,7 @@
     <span>© 2026 Sean Nelson Sserubiri</span>
     <a href="#top">Back to top ↑</a>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
