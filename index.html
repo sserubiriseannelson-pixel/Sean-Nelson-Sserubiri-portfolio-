@@ -3,117 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b0d12">
-  <meta name="description" content="Sean Nelson Sserubiri — student and aspiring tech professional building projects and learning through code.">
-  <title>Sean Nelson Sserubiri | Aspiring Tech Professional</title>
+  <title>Sean Nelson Sserubiri — Student developer</title>
+  <meta name="description" content="Sean Nelson Sserubiri is a student at Makerere College School learning web development with HTML, CSS and JavaScript.">
+  <meta name="theme-color" content="#f6f3ee">
+  <meta property="og:title" content="Sean Nelson Sserubiri">
+  <meta property="og:description" content="Student at Makerere College School, learning web development.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3a2e'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' text-anchor='middle' fill='%23f6f3ee'%3ES%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Sean Nelson Sserubiri home"><span class="brand-mark">S<span>.</span></span><span class="brand-name">Sean Nelson</span></a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span></button>
-      <div class="nav-links" id="nav-links">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme"><span id="theme-icon">☼</span></button>
-      </div>
-    </nav>
+    <div class="wrap bar">
+      <a class="wordmark" href="#top">Sean Nelson Sserubiri</a>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero container section" id="home">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> STUDENT · ASPIRING TECH PROFESSIONAL</div>
-        <h1>MY NAME IS SEAN NELSON SSERUBIRI.<br><span class="gradient-text">studying to build for tomorrow.</span></h1>
-        <p class="hero-intro">Hi, I'm <strong>Sean Nelson Sserubiri</strong>. I'm beginning my journey in technology, learning by doing, and turning ideas into useful projects one step at a time.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="#contact">Get in touch</a>
-        </div>
-        <div class="hero-meta"><span class="mono">CURRENT FOCUS</span><span>Learning · Practising · Creating</span></div>
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <p class="kicker">Student · Makerere College School</p>
+      <h1>I'm learning to build things for the web.</h1>
+      <p class="lede">I'm Sean. I'm early in my technology journey, working through the fundamentals of HTML, CSS and JavaScript, and looking for people and opportunities to learn from.</p>
+      <p class="links">
+        <a class="btn" href="#work">See my work</a>
+        <a class="plain" href="https://github.com/sserubiriseannelson-pixel" target="_blank" rel="noopener">GitHub profile&nbsp;↗</a>
+      </p>
+    </section>
+
+    <section class="wrap block" id="about">
+      <h2 class="label">About</h2>
+      <div class="prose">
+        <p>I'm a student at Makerere College School. I got interested in technology because I like seeing an idea turn into something that works on a screen.</p>
+        <p>I haven't settled on one area yet, so for now I'm learning the basics properly and practising by building small things. I'm hoping to find a mentor, an internship, or a first role where I can contribute to a team and keep learning.</p>
       </div>
-      <div class="hero-visual reveal" aria-label="Decorative code illustration">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="code-card">
-          <div class="code-top"><div class="window-dots"><i></i><i></i><i></i></div><span>hello-world.js</span><span class="code-lock">JS</span></div>
-          <div class="code-content">
-            <div><span class="line-no">01</span><span class="code-purple">const</span> <span class="code-blue">developer</span> = {</div>
-            <div><span class="line-no">02</span>&nbsp;&nbsp;name: <span class="code-green">'Sean'</span>,</div>
-            <div><span class="line-no">03</span>&nbsp;&nbsp;curious: <span class="code-orange">true</span>,</div>
-            <div><span class="line-no">04</span>&nbsp;&nbsp;learning: <span class="code-green">'every day'</span>,</div>
-            <div><span class="line-no">05</span>&nbsp;&nbsp;building: <span class="code-green">'the future'</span></div>
-            <div><span class="line-no">06</span>};</div>
-            <div class="code-spacer"></div>
-            <div><span class="line-no">07</span><span class="code-purple">while</span> (you.keepLearning) {</div>
-            <div><span class="line-no">08</span>&nbsp;&nbsp;keepBuilding(); <span class="cursor">▍</span></div>
-            <div><span class="line-no">09</span>}</div>
+    </section>
+
+    <section class="wrap block" id="work">
+      <h2 class="label">Work</h2>
+      <div>
+        <article class="row">
+          <span class="num">01</span>
+          <div>
+            <h3><a href="https://github.com/sserubiriseannelson-pixel/Sean-Nelson-Sserubiri-portfolio-" target="_blank" rel="noopener">This portfolio</a></h3>
+            <p>A personal site built with HTML, CSS and JavaScript and published with GitHub Pages. Source code is public.</p>
+            <p class="meta">HTML · CSS · GitHub Pages</p>
           </div>
-          <div class="code-bottom"><span><span class="live-dot"></span> Ready to learn</span><span>UTF-8</span></div>
-        </div>
-        <div class="floating-chip chip-top"><span class="chip-icon">✳</span> Curious by nature</div>
-        <div class="floating-chip chip-bottom"><span class="chip-icon">⌘</span> Small steps, real progress</div>
-      </div>
-      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
-    </section>
-
-    <section class="section container" id="about">
-      <div class="section-heading reveal"><span class="eyebrow">01 / ABOUT ME</span><h2>Every expert starts<br>as a <span class="gradient-text">beginner.</span></h2></div>
-      <div class="about-grid">
-        <div class="about-copy reveal">
-          <p class="large-copy">I'm a student at Makerere College School, beginning my journey in technology and excited to see where consistent learning can take me.</p>
-          <p>I'm still exploring which technologies suit me best, so I'm starting with the fundamentals and learning through practice. I believe the best way to grow is to stay curious, ask questions, and keep improving what I build.</p>
-          <p>I'm working toward opportunities where I can learn from others, contribute to a team, and grow into a capable technology professional.</p>
-        </div>
-        <div class="about-panel reveal">
-          <div class="panel-label mono">A FEW THINGS ABOUT ME</div>
-          <div class="trait"><span class="trait-icon">↗</span><div><strong>Growth mindset</strong><small>Always open to feedback and new ideas.</small></div></div>
-          <div class="trait"><span class="trait-icon">⌘</span><div><strong>Learning by building</strong><small>Turning new concepts into practice.</small></div></div>
-          <div class="trait"><span class="trait-icon">◎</span><div><strong>Opportunity focused</strong><small>Preparing for an internship or first role.</small></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container" id="skills">
-      <div class="section-heading reveal"><span class="eyebrow">02 / SKILLS & LEARNING</span><h2>Building my <span class="gradient-text">toolkit.</span></h2><p>These are suggested starting points. Keep only the technologies you have actually tried, and update this section as you learn.</p></div>
-      <div class="skills-grid">
-        <article class="skill-card reveal"><div class="skill-symbol">&lt;/&gt;</div><h3>Web foundations</h3><p>Structure, styling, and interactive pages.</p><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><span class="learning-label">STARTER LEARNING PATH</span></article>
-        <article class="skill-card reveal"><div class="skill-symbol">⌘</div><h3>Developer workflow</h3><p>Learning to manage code and track changes.</p><div class="skill-tags"><span>Git</span><span>GitHub</span><span>README files</span></div><span class="learning-label">STARTER LEARNING PATH</span></article>
-        <article class="skill-card reveal"><div class="skill-symbol">✳</div><h3>Problem solving</h3><p>Breaking ideas into small, testable steps.</p><div class="skill-tags"><span>Practice</span><span>Debugging</span><span>Research</span></div><span class="learning-label">SKILLS TO DEVELOP</span></article>
-      </div>
-      <p class="section-note"><span>✦</span> These are learning suggestions, not a claim of proficiency. Edit the tags to reflect your real experience.</p>
-    </section>
-
-    <section class="section container" id="projects">
-      <div class="section-heading reveal"><span class="eyebrow">03 / SELECTED PROJECTS</span><h2>Small projects.<br><span class="gradient-text">Real progress.</span></h2><p>I don't have completed projects to feature yet, so these are beginner-friendly project ideas to build next—not completed work. I'll replace them with real projects as I finish them.</p></div>
-      <div class="projects-grid">
-        <article class="project-card reveal">
-          <div class="project-art art-one"><div class="mini-browser"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-content"><span class="mini-kicker">PROJECT IDEA</span><b>Personal<br>webpage</b><div class="mini-lines"><i></i><i></i><i></i></div></div></div><span class="art-index">01</span></div>
-          <div class="project-info"><div class="project-type">WEB DEVELOPMENT <span>01</span></div><h3>Build a personal webpage</h3><p>A first project idea for practising page structure, styling, and responsive layouts.</p><div class="project-footer"><div class="skill-tags"><span>HTML</span><span>CSS</span></div><a href="https://github.com/sserubiriseannelson-pixel" class="text-link" target="_blank" rel="noreferrer">View GitHub ↗</a></div></div>
         </article>
-        <article class="project-card reveal">
-          <div class="project-art art-two"><div class="task-window"><div class="task-title">Today <span>✳</span></div><div class="task-row"><i class="task-check checked"></i><span>Learn something new</span></div><div class="task-row"><i class="task-check"></i><span>Build a small feature</span></div><div class="task-row"><i class="task-check"></i><span>Write down progress</span></div></div><span class="art-index">02</span></div>
-          <div class="project-info"><div class="project-type">PROJECT IDEA <span>02</span></div><h3>Build a task tracker</h3><p>A beginner project idea for practising how to organise information and add interactivity.</p><div class="project-footer"><div class="skill-tags"><span>JavaScript</span><span>CSS</span></div><a href="https://github.com/sserubiriseannelson-pixel" class="text-link" target="_blank" rel="noreferrer">View GitHub ↗</a></div></div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-art art-three"><div class="terminal"><div class="terminal-head"><span>~/learning-log</span><span>•••</span></div><p><span>$</span> git status</p><p class="terminal-muted">Learning in progress...</p><p><span>$</span> <b class="cursor">▍</b></p></div><span class="art-index">03</span></div>
-          <div class="project-info"><div class="project-type">PROJECT IDEA <span>03</span></div><h3>Start a learning log</h3><p>A simple log idea for recording new concepts, challenges, and lessons as I learn.</p><div class="project-footer"><div class="skill-tags"><span>Markdown</span><span>GitHub</span></div><a href="https://github.com/sserubiriseannelson-pixel" class="text-link" target="_blank" rel="noreferrer">View GitHub ↗</a></div></div>
-        </article>
+        <p class="aside">Next on my list: a small task tracker in JavaScript and a learning log kept in Markdown. I'll add them here once they're finished.</p>
       </div>
-      <div class="projects-cta reveal"><span>Have a project on GitHub?</span><a class="button button-secondary" href="https://github.com/sserubiriseannelson-pixel" target="_blank" rel="noreferrer">Visit GitHub <span aria-hidden="true">↗</span></a></div>
     </section>
 
-    <section class="section container" id="contact">
-      <div class="contact-card reveal"><div class="contact-orb" aria-hidden="true"></div><span class="eyebrow">04 / CONTACT</span><h2>Let's make the<br><span class="gradient-text">next step count.</span></h2><p>I'm building my skills and looking forward to learning opportunities, mentorship, and entry-level experience.</p><div class="contact-actions"><a class="button button-primary" href="https://github.com/sserubiriseannelson-pixel" target="_blank" rel="noreferrer">Connect on GitHub ↗</a><a class="button button-secondary" href="#home">Back to top ↑</a></div><small>When you're ready, add a professional email address or LinkedIn profile here.</small></div>
+    <section class="wrap block" id="tools">
+      <h2 class="label">Tools</h2>
+      <p class="plainlist">HTML, CSS, JavaScript, Git, GitHub</p>
+    </section>
+
+    <section class="wrap block" id="contact">
+      <h2 class="label">Contact</h2>
+      <div class="prose">
+        <p>If you're a mentor, teacher or employer and want to get in touch, the best place to find me for now is GitHub.</p>
+        <!-- Add a public email or LinkedIn link here when ready, e.g.
+        <p><a href="mailto:you@example.com">you@example.com</a></p> -->
+        <p><a class="plain" href="https://github.com/sserubiriseannelson-pixel" target="_blank" rel="noopener">github.com/sserubiriseannelson-pixel&nbsp;↗</a></p>
+      </div>
     </section>
   </main>
 
-  <footer class="footer container"><a class="brand" href="#home"><span class="brand-mark">S<span>.</span></span><span class="brand-name">Sean Nelson Sserubiri</span></a><span>Designed with curiosity. Built one step at a time.</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
-  <script src="script.js"></script>
+  <footer class="wrap foot">
+    <span>© 2026 Sean Nelson Sserubiri</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
 </body>
 </html>
